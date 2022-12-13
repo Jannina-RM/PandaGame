@@ -179,7 +179,7 @@ class Game:
             self.display_text('Presiona R para intentar de nuevo', 25, BLACK, WIDTH // 2, 200 )
             if self.score > self.highscore:
                 self.highscore = self.score
-                self.display_text('TIENES UN NUEVO RECORD', 30, BLACK, WIDTH // 2, HEIGHT // 2)
+                self.display_text('NUEVO RECORD', 30, BLACK, WIDTH // 2, 200)
                 with open(path.join(self.dir, HS_FILE), 'w') as f:
                     f.write(str(self.score))
             else:
